@@ -7,7 +7,8 @@ fill.addEventListener('dragend', dragEnd);
 
 // Drag Functions
 function dragStart() {
-  console.log('start');
+  this.className += ' hold';
+  setTimeout(() => (this.className = 'invisible'), 0);
 }
 
 function dragEnd() {
